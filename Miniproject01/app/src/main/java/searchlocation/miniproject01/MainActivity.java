@@ -12,6 +12,9 @@ import android.widget.Toast;
 
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.GoogleApiAvailability;
+import com.ittianyu.bottomnavigationviewex.BottomNavigationViewEx;
+
+import searchlocation.miniproject01.Utilis.BottomNavigationViewHelper;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -22,7 +25,6 @@ public class MainActivity extends AppCompatActivity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
-
 		if(isServiceOK()){
 			init();
 		}
@@ -57,6 +59,11 @@ public class MainActivity extends AppCompatActivity {
 			Toast.makeText(this, "Error", Toast.LENGTH_SHORT).show();
 		}
 		return false;
+	}
+
+	private void setupBottomNavigationView(){
+		BottomNavigationViewEx bottomNavigationViewEx = (BottomNavigationViewEx) findViewById(R.id.bottomNavigation);
+		BottomNavigationViewHelper.setupBottomNavigationView(bottomNavigationViewEx);
 	}
 
 }
