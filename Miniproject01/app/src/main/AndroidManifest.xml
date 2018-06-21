@@ -21,7 +21,7 @@
             android:name="com.google.android.geo.API_KEY"
             android:value="AIzaSyDBET_Zj5EIr41MzYdo4Oki_uTPu39AsSE"/>
 
-        <activity android:name=".MainActivity"
+        <activity android:name=".OnGoingActivity"
                   android:theme="@style/AppTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -33,6 +33,9 @@
             android:windowSoftInputMode="adjustPan">
         </activity>
         <activity android:name=".Test"></activity>
+        <activity android:name=".SharePlanActivity"></activity>
+        <activity android:name=".FavoriteActivity"></activity>
+        <activity android:name=".ArticleActivity"></activity>
     </application>
 
 </manifest>

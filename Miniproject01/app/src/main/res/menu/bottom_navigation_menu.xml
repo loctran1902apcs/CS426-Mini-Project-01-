@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
-        android:id="@+id/ic_highlight_onclick"
+        android:id="@+id/ic_highlight"
         android:title=""
-        android:icon="@drawable/ic_highlight_onclick"
+        android:icon="@drawable/ic_highlight"
         >
     </item>
     <item
@@ -22,6 +22,12 @@
         android:id="@+id/ic_favorite"
         android:title=""
         android:icon="@drawable/ic_favorite"
+        >
+    </item>
+    <item
+        android:id="@+id/ic_menu"
+        android:title=""
+        android:icon="@drawable/ic_favorite_copy"
         >
     </item>
 </menu>
